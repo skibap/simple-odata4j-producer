@@ -16,11 +16,11 @@ Product:
 OData Service "simple.svc":
 
 - EntitySet "Products"
-- Entity "Product"
-- Property "Key"
-- Property "Description"
+- - Entity "Product"
+- - - Property "Key"
+- - - Property "Description"
 
-http://*server*:*port*/SimpleOData4JProducer/simple.svc/Products?$format=json
+http://<server>:<port>/SimpleOData4JProducer/simple.svc/Products?$format=json
 
 ### Option 1
 Start web server in eclipse
