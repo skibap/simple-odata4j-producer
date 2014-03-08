@@ -3,23 +3,27 @@ Main focus lies on create, read, update and delete (CRUD) of an entity.
 Due to complexity no database connection is implemented all changes are 
 stored temporarily in SimpleInMemoryProducer.
 
-Example:
+### Example
 Our OData Service manages products. A product contains a key and a description.
+
 Product:
+
 - Key: IA40001
 - Description: USB2 Adapter 
 
-Details:
+### Details
+
 OData Service "simple.svc":
+
 - EntitySet "Products"
--- Entity "Product"
---- Property "Key"
---- Property "Description"
+- Entity "Product"
+- Property "Key"
+- Property "Description"
 
 http://<url>:<port>/SimpleOData4JProducer/simple.svc/Products?$format=json
 
-Option 1:
+### Option 1
 Start web server in eclipse
 
-Option 2:
+### Option 2
 Start web server stand alone and deploy WebContent folder as own webapp
